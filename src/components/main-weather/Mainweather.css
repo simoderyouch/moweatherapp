@@ -1,0 +1,156 @@
+.weather-container {
+
+
+    width: 100%;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-center {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 58px;
+}
+
+.weather-days {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.weather-card {
+    background-color: var(--background-color-blue);
+    padding: 27px 34px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card img {
+    width: 100px;
+}
+
+.weather-card .temp {
+    display: flex;
+    gap: 13px;
+    font-weight: 900;
+}
+
+.weather-card .temp p:last-child {
+    color: var(--font-gray);
+}
+
+.today-hightlights-block {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 41px;
+}
+
+.today-hightlights-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color-blue);
+    padding: 24px 40px 17px;
+    text-align: center;
+
+}
+
+.today-hightlight h1 {
+    margin-bottom: 40px;
+}
+
+.today-hightlights-card p {
+    color: var(--color-white);
+}
+
+.today-hightlights-card h1 {
+    font-size: 68px;
+    margin-bottom: 17px;
+}
+
+.today-hightlights-card h1 span {
+    font-weight: 400;
+    font-size: 33px;
+
+}
+
+.today-hightlights-card .deg .cros {
+    background-color: var(--color-gray);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today-hightlights-card .deg .cros svg {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.today-hightlights-card .deg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    height: 55px;
+}
+
+.today-hightlights-card .bar-block {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 5px;
+    height: 55px;
+}
+
+.today-hightlights-card .bar-block p {
+    color: var(--color-gray);
+    font-weight: 900;
+}
+
+.today-hightlights-card .bar-nbr {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-gray);
+
+}
+
+.today-hightlights-card .bar-nbr p {
+    font-weight: 600;
+    color: var(--color-gray);
+
+}
+
+.today-hightlights-card .bar {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 8px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.today-hightlights-card .bar span {
+
+    position: absolute;
+    background-color: var(--color-yallow);
+    left: 0;
+    height: 100%;
+    border-radius: 30px;
+}
