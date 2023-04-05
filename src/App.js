@@ -9,7 +9,7 @@ function App() {
 
   const [weatherData, setWeatherData] = useState({});
   const [forecast, setforecast] = useState({});
-  console.log(process.env.REACT_APP_API_KEY)
+  
   async function getWeatherData(lat, lon) {
     const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
