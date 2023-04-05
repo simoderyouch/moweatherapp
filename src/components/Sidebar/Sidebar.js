@@ -74,7 +74,7 @@ function SearchSideBar(props) {
 
 
 
-        const weatherApiUrl = `https://api.openweathermap.org/data/2.5/find?q=${value}&type=like&appid=${apikey}`;
+        const weatherApiUrl = `https://api.openweathermap.org/data/2.5/find?q=${value}&type=like&appid=${process.env.REACT_APP_API_KEY}`;
 
         try {
             const response = await fetch(weatherApiUrl);

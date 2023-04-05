@@ -9,9 +9,9 @@ function App() {
 
   const [weatherData, setWeatherData] = useState({});
   const [forecast, setforecast] = useState({});
-  const apikey = 'bdd72beeaef615db1239b719b39c4032'
+  console.log(process.env.REACT_APP_API_KEY)
   async function getWeatherData(lat, lon) {
-    const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apikey}`;
+    const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
     const response = await fetch(weatherApiUrl);
     const data = await response.json();
@@ -19,7 +19,7 @@ function App() {
 
   }
   async function getDatafor7days(lat, lon) {
-    const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?appid=${apikey}&lat=${lat}&lon=${lon}&units=metric`;
+    const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?appid=${process.env.REACT_APP_API_KEY}&lat=${lat}&lon=${lon}&units=metric`;
 
     const response = await fetch(weatherApiUrl);
     const data = await response.json();
