@@ -24,7 +24,7 @@
 
 .weather-card {
     background-color: var(--background-color-blue);
-    padding: 27px 34px;
+    padding: 21px 25px;
     font-size: 13px;
     display: flex;
     flex-direction: column;
