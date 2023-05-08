@@ -69,7 +69,7 @@ function SearchSideBar(props) {
 
 
 
-    const apikey = 'bdd72beeaef615db1239b719b39c4032'
+  
     async function listCity() {
 
 
