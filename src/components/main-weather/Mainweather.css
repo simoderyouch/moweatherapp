@@ -109,7 +109,7 @@
 .today-hightlights-card .bar-block {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     flex-direction: column;
     width: 100%;
 
