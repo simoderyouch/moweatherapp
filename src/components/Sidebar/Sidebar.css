@@ -237,3 +237,6 @@
     color: var(--font-gray);
 
 }
+.loading {
+    color: var(--font-gray);
+}

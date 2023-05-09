@@ -16,7 +16,11 @@ const initialState = {
 }
 
 export const FetchLocation = createAsyncThunk('search/FetchLocation', async (value) => {
+<<<<<<< HEAD
+  const weatherApiUrl = `https://api.openweathermap.org/data/2.5/find?q=${value}&type=like&appid=${process.env.REACT_APP_API_KEY}`;
+=======
   const weatherApiUrl = `https://api.openweathermap.org/data/2.5/find?q=${value}&type=like&appid=${"10ec1982ea4249160a1f52bc61f3bc91"}`;
+>>>>>>> origin/version2
 
   try {
     const response = await fetch(weatherApiUrl);
@@ -53,7 +57,11 @@ export const searchSlice = createSlice({
       .addCase(FetchLocation.fulfilled, (state, action) => {
         state.isLoading = false
         console.log(action.payload)
+<<<<<<< HEAD
+        if (action.payload.status === 200 && action.payload.data.list.length > 0) {
+=======
         if (action.payload.status !== 400 && action.payload.data.list.length > 0) {
+>>>>>>> origin/version2
           state.locationList = action.payload.data.list
         } else {
           state.error = true
