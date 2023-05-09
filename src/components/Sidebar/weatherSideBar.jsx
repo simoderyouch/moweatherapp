@@ -46,7 +46,7 @@ function WeatherSidebar() {
           <BiCurrentLocation />
         </button>
       </div>
-      <Loading error={error} loading={isLoading}>
+      <Loading error={error} loading={isLoading}  err={true}>
         {weatherInfo && (
           <>
             <div className="WeatherContainer-Icon">

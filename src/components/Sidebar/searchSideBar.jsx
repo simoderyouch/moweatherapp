@@ -57,7 +57,7 @@ function SearchSideBar() {
 
       <div className="search-block">
         {btnSearchClick ? (
-          <Loading error={error} loading={isLoading}>
+          <Loading error={error} loading={isLoading} err={true}>
             {locationList.map((result) => (
               <button
                 className="search-result"

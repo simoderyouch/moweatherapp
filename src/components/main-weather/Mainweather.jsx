@@ -12,7 +12,7 @@ function Mainweather() {
       <div className="weather-center">
        
         <div className="weather-days">
-        <Loading error={error} loading={isLoading}>
+        <Loading error={error} loading={isLoading} err={false}>
           {forecast && forecast.length > 0 && (
             forecast.map((result) => (
               <div className="weather-card" key={result.dt}>
@@ -30,7 +30,7 @@ function Mainweather() {
           ) }
           </Loading>
         </div>
-        <Loading error={error} loading={isLoading}>
+        <Loading error={error} loading={isLoading} err={true}>
         {weatherInfo && (
           <div className="today-hightlight">
             <h1>Today's Highlights</h1>

@@ -1,9 +1,10 @@
-function Loading({ loading, error, children }) {
+function Loading({ loading, error, children,err }) {
   return (
     <>
       {loading ? (
+        err &&
         <p className="loading">please wait...</p>
-      ) : error ? (
+      ) : error ? ( err &&
         <div className="error">
           <h3>Result Not Found</h3>
           <p>Whoops...this information is not availble for a moment</p>
