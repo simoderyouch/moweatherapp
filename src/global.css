@@ -53,8 +53,11 @@ body {
         padding: 30px 15px !important;
 
     }
+    .Location-search {
+        padding: 30px 15px !important;
+        width: 23.59% !important;
+    }
 }
-
 @media only screen and (max-width: 900px) {
     .main-app {
         flex-direction: column;
@@ -64,7 +67,7 @@ body {
 
     .WeatherContainer {
         width: 100% !important;
-        padding: 30px 20px !important;
+        padding: 30px 30px !important;
         gap: 27px;
 
     }
@@ -84,11 +87,19 @@ body {
 
     .Location-search {
         width: 100% !important;
-
+        background-color: transparent !important;
+        left: 0px !important;
+        opacity: 0;
+        pointer-events: none;
         position: fixed !important;
         height: auto !important;
+        padding: 30px 28px !important;
     }
-
+    .setShow {
+        pointer-events: all;
+        left: 0px;
+        opacity: 1;
+    }
     .Location-search::before {
         content: "";
         width: 100%;
